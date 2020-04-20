@@ -190,7 +190,7 @@ h2 {
 footer {
   position: absolute;
   bottom: 0;
-  width: inherit;
+  width: 90%;
   height: 3.5em;
   background: #000;
 }
@@ -198,16 +198,28 @@ footer {
 #footer-wrap {
   display: flex;
   flex-direction: row;
-  width: inherit;
-  padding: 0 1.5em 0 1.5em;
+  width: 100%;
 }
 
 footer p {
   color: #FFF;
+  margin-left: 1.5em;
 }
 
 #footer-links{
-  
+  margin-left: auto;
+  align-self: center;
+  margin-right: 1.5em;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: #FFF;
+  margin-left: 10px;
+}
+
+#footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* ==========================================================================
