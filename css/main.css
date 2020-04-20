@@ -195,10 +195,19 @@ footer {
   background: #000;
 }
 
+#footer-wrap {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  padding: 0 1.5em 0 1.5em;
+}
+
 footer p {
-  float:left;
   color: #FFF;
-  margin-left: 1.5em;
+}
+
+#footer-links{
+  
 }
 
 /* ==========================================================================
