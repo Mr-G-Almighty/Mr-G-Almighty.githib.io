@@ -127,6 +127,19 @@ header {
   flex-direction: row;
   align-content: center;
   padding-left: 30px;
+  animation-name: header-intro;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes header-intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #header-wrap h1, #header-wrap h2 {
@@ -151,6 +164,19 @@ header {
   flex-direction: column;
   width: 100px;
   opacity: 0.5;
+  animation-name: logo-intro;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes logo-intro {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 45px;
+  }
 }
 
 #logo-wrapper img {
