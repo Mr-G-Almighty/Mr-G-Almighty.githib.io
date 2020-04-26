@@ -269,6 +269,10 @@ header {
   font-size: 14px;
 }
 
+#version-link {
+  margin-right: 0!important;
+}
+
 main {
   text-align: justify;
   font-family: 'IBM Plex Sans', sans-serif;
