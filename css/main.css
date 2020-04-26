@@ -273,12 +273,22 @@ main {
   text-align: justify;
   font-family: 'IBM Plex Sans', sans-serif;
   background: #fff;
-  padding: 25px 25px 50px 25px;
+  padding: 4vh 10vw;
   color: #000;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 20px;
 }
 
 main p {
   margin: 0;
+}
+
+#main-graph {
+  background: rgb(0, 204, 255);
+  padding: 15px;
+  text-align: left;
+  border-radius: 10px;
 }
 
 main a {
