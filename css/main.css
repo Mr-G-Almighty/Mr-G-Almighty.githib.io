@@ -231,6 +231,18 @@ header {
 
 #navbar a:hover{
   color: #FFF;
+  animation-name: link-hover;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-hover {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 1px 1px 0px #000;
+  }
 }
 
 #version-counter{
