@@ -144,17 +144,48 @@ header {
 
 #header-wrap h1, #header-wrap h2 {
   align-self: center;
+  text-shadow: none;
 }
 
 #header-wrap h1{
   min-width: 340px;
+  margin: 0;
+  animation-name: shadow-fill-one;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2000ms;
+}
+
+@keyframes shadow-fill-one {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 4px 4px 0px rgba(97, 97, 97, 0.9);
+  }
 }
 
 #header-wrap h2 {
-  margin-top: 82px;
+  margin-top: 37px;
   min-width: 370px;
   color: rgb(0, 204, 255);
+  animation-name: shadow-fill-two;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2000ms;
 }
+
+@keyframes shadow-fill-two {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 2px 2px 0px rgba(97, 97, 97, 0.9);
+  }
+}
+
 
 #logo-wrapper {
   position: absolute;
@@ -162,8 +193,7 @@ header {
   right: 45px;
   display: flex;
   flex-direction: column;
-  width: 100px;
-  opacity: 0.5;
+  width: 300px;
   animation-name: logo-intro;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
