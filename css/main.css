@@ -256,7 +256,7 @@ main {
   color: #000;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 3vw;
 }
 
 main p {
