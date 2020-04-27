@@ -127,10 +127,6 @@ header {
   flex-direction: row;
   align-content: center;
   padding-left: 30px;
-  animation-name: header-intro;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
 }
 
 @keyframes header-intro {
@@ -145,47 +141,26 @@ header {
 #header-wrap h1, #header-wrap h2 {
   align-self: center;
   text-shadow: none;
+  animation-name: header-intro;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 #header-wrap h1{
   min-width: 340px;
   margin: 0;
-  animation-name: shadow-fill-one;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  animation-delay: 2000ms;
-}
-
-@keyframes shadow-fill-one {
-  from {
-    text-shadow: none;
-  }
-  to {
-    text-shadow: 4px 4px 0px rgba(97, 97, 97, 0.9);
-  }
+  animation-delay: 250ms;
+  opacity: 0;
 }
 
 #header-wrap h2 {
   margin-top: 37px;
   min-width: 370px;
   color: rgb(0, 204, 255);
-  animation-name: shadow-fill-two;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  animation-delay: 2000ms;
+  animation-delay: 500ms;
+  opacity: 0;
 }
-
-@keyframes shadow-fill-two {
-  from {
-    text-shadow: none;
-  }
-  to {
-    text-shadow: 2px 2px 0px rgba(97, 97, 97, 0.9);
-  }
-}
-
 
 #logo-wrapper {
   position: absolute;
@@ -202,7 +177,7 @@ header {
 
 @keyframes logo-intro {
   from {
-    top: -500px;
+    top: -200px;
   }
   to {
     top: 45px;
@@ -233,7 +208,7 @@ header {
     margin-top:inherit;
   }
   to {
-    margin-top: -6.5vh;
+    margin-top: -60px;
   }
 }
 
