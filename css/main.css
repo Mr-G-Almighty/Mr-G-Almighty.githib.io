@@ -268,6 +268,34 @@ main p {
   padding: 15px;
   text-align: left;
   border-radius: 10px;
+  position: relative;
+}
+
+#title-card {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 48px;
+  right: -20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#title-card:hover {
+  color: Yellow;
+  background: linear-gradient(90deg, rgba(0,85,106,1) 0%, rgba(255,248,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+#skill-list {
+  padding: 0;
+  margin: 0;
+}
+
+#skill-list li {
+  list-style: none;
 }
 
 main a {
